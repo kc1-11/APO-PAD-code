@@ -1,4 +1,4 @@
-***Stata code for APO-PAD models
+***Stata code for APO-PAD main models
 
 stset ftime, failure(pad) id(id_mother) scale(365.25) origin(birthdate_mother) enter(time birthdate_child) exit(time birthdate_child+365.25*46)
 xi: stcox ptd sga pec ohd gdm deliveryyear i.deliveryyearcat i.paritycat i.education i.employed i.income i.countryoforigin bmi i.bmicat i.smoking htn_baseline dm_baseline lipid_baseline
